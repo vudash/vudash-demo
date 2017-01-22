@@ -1,0 +1,22 @@
+{
+  "name": "vudash-demo",
+  "version": "1.0.0",
+  "description": "Demo site for Vudash",
+  "main": "index.js",
+  "scripts": {
+    "start": "DEFAULT_DASHBOARD=demo vudash",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vudash": "^5.1.1",
+    "vudash-widget-ci": "^5.1.1",
+    "vudash-widget-gauge": "^5.1.1",
+    "vudash-widget-health": "^5.2.0",
+    "vudash-widget-progress": "^5.1.1",
+    "vudash-widget-statistic": "^5.1.1",
+    "vudash-widget-status": "^5.1.1",
+    "vudash-widget-time": "^5.1.1"
+  }
+}
