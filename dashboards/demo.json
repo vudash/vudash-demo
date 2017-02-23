@@ -100,6 +100,9 @@
       }
     },
     { "position": {"x": 2, "y": 2, "w": 1, "h": 1},
+      "datasource": {
+        "name": "ds-random"
+      },
       "widget": "vudash-widget-gauge"
     },
     { "position": {"x": 3, "y": 2, "w": 2, "h": 1},
