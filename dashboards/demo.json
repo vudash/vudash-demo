@@ -6,14 +6,14 @@
   },
   "plugins": {
     "ds-rest-xe": {
-      "module": "@vendigo/datasource-rest",
+      "module": "@vudash/datasource-rest",
       "options": {
         "method": "get",
         "url": "http://api.fixer.io/latest?base=EUR"
       }
     },
     "ds-random": {
-      "module": "@vendigo/datasource-random"
+      "module": "@vudash/datasource-random"
     }
   },
   "widgets": [
@@ -62,7 +62,13 @@
         "description": "Visitor Count"
       }
     },
-    { "position": {"x": 3, "y": 1, "w": 1, "h": 1}, "widget": "vudash-widget-progress" },
+    { 
+      "position": {"x": 3, "y": 1, "w": 1, "h": 1},
+      "datasource": {
+        "name": "ds-random"
+      },
+      "widget": "vudash-widget-progress"
+    },
     { "position": {"x": 4, "y": 1, "w": 1, "h": 1}, 
       "widget": "vudash-widget-status",
       "options": {
