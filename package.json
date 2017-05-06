@@ -12,13 +12,13 @@
   "dependencies": {
     "@vudash/datasource-random": "^6.0.0",
     "@vudash/datasource-rest": "^6.0.0",
-    "vudash": "^6.0.0",
-    "vudash-widget-ci": "^6.0.0",
-    "vudash-widget-gauge": "^6.0.0",
-    "vudash-widget-health": "^6.0.0",
-    "vudash-widget-progress": "^6.0.0",
-    "vudash-widget-statistic": "^6.0.0",
-    "vudash-widget-status": "^6.0.0",
-    "vudash-widget-time": "^6.0.0"
+    "vudash": "^7.0.0",
+    "vudash-widget-ci": "^7.0.0",
+    "vudash-widget-gauge": "^7.0.0",
+    "vudash-widget-health": "^7.0.0",
+    "vudash-widget-progress": "^7.0.0",
+    "vudash-widget-statistic": "^7.0.0",
+    "vudash-widget-status": "^7.0.0",
+    "vudash-widget-time": "^7.0.0"
   }
 }
