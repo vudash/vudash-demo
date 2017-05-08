@@ -15,7 +15,7 @@
     "vudash": "^7.0.0",
     "vudash-widget-ci": "^7.0.0",
     "vudash-widget-gauge": "^7.0.0",
-    "vudash-widget-health": "^7.0.0",
+    "vudash-widget-health": "^6.0.0",
     "vudash-widget-progress": "^6.0.0",
     "vudash-widget-statistic": "^7.0.0",
     "vudash-widget-status": "^7.0.0",
