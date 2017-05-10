@@ -1042,8 +1042,8 @@ find-up@^1.0.0:
     pinkie-promise "^2.0.0"
 
 fit-text@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/fit-text/-/fit-text-2.0.0.tgz#95774464fde2b25e99290f54c675e5fb7ea91ab1"
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/fit-text/-/fit-text-2.0.1.tgz#b5351d39c34eb18cfdd18a178634c46456326f60"
 
 flush-write-stream@^1.0.0:
   version "1.0.2"
@@ -3496,8 +3496,8 @@ vudash-widget-progress@^6.0.0:
   resolved "https://registry.yarnpkg.com/vudash-widget-progress/-/vudash-widget-progress-6.0.2.tgz#b4893a30fed7e8be129e15fd7fe6ec54d9c701ca"
 
 vudash-widget-statistic@^7.0.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-statistic/-/vudash-widget-statistic-7.3.0.tgz#f7f8a54c4c4ed8c908a299e99ec4054cbbf436e4"
+  version "7.3.2"
+  resolved "https://registry.yarnpkg.com/vudash-widget-statistic/-/vudash-widget-statistic-7.3.2.tgz#444af0b4dd67f3dbe0b423cd91dfc5ae9962ba1e"
   dependencies:
     chartist "^0.11.0"
     fit-text "^2.0.0"
