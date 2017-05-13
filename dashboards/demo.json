@@ -14,6 +14,16 @@
     },
     "ds-random": {
       "module": "@vudash/datasource-random"
+    },
+    "ds-random-progress": {
+      "module": "@vudash/datasource-random",
+      "options": {
+        "method": "natural",
+        "options": {
+          "min": 0,
+          "max": 100
+        }
+      }
     }
   },
   "widgets": [
@@ -65,9 +75,12 @@
     { 
       "position": {"x": 3, "y": 1, "w": 1, "h": 1},
       "datasource": {
-        "name": "ds-random"
+        "name": "ds-random-progress"
       },
-      "widget": "vudash-widget-progress"
+      "widget": "vudash-widget-progress",
+      "options": {
+        "schedule": 1000
+      }
     },
     { "position": {"x": 4, "y": 1, "w": 1, "h": 1}, 
       "widget": "vudash-widget-status",
@@ -96,14 +109,16 @@
       },
       "options": {
         "schedule": 900000,
-        "description": "EUR -> GBP"
+        "description": "EUR -> GBP",
+        "format": "€%.2f"
       }
     },
     { "position": {"x": 2, "y": 2, "w": 1, "h": 1},
       "datasource": {
         "name": "ds-random"
       },
-      "widget": "vudash-widget-gauge"
+      "widget": "vudash-widget-gauge",
+      "description": "Power Level"
     },
     { "position": {"x": 3, "y": 2, "w": 2, "h": 1},
       "widget": "vudash-widget-statistic",
@@ -115,7 +130,8 @@
       },
       "options": {
         "schedule": 900000,
-        "description": "EUR -> USD"
+        "description": "EUR -> USD",
+        "format": "€%.2f"
       }
     }
   ]

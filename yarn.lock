@@ -747,8 +747,8 @@ decamelize@^1.0.0, decamelize@^1.1.1:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 deep-extend@~0.4.0:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.1.tgz#efe4113d08085f4e6f9687759810f807469e2253"
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
 
 defaults@^1.0.3:
   version "1.0.3"
@@ -939,6 +939,10 @@ escape-html@~1.0.3:
 escape-string-regexp@^1.0.2:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
+
+estree-walker@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.2.1.tgz#bdafe8095383d8414d5dc2ecf4c9173b6db9412e"
 
 estree-walker@^0.3.0:
   version "0.3.1"
@@ -1167,8 +1171,8 @@ fstream-ignore@^1.0.0, fstream-ignore@^1.0.5:
     minimatch "^3.0.0"
 
 fstream-npm@~1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/fstream-npm/-/fstream-npm-1.2.0.tgz#d2c3c89101346982d64e57091c38487bda916fce"
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/fstream-npm/-/fstream-npm-1.2.1.tgz#08c4a452f789dcbac4c89a4563c902b2c862fd5b"
   dependencies:
     fstream-ignore "^1.0.0"
     inherits "2"
@@ -1635,8 +1639,8 @@ jodid25519@^1.0.0:
     jsbn "~0.1.0"
 
 joi@10.x.x:
-  version "10.4.1"
-  resolved "https://registry.yarnpkg.com/joi/-/joi-10.4.1.tgz#a2fca1f0d603d1b843f2c1e086b52461f6be1f36"
+  version "10.4.2"
+  resolved "https://registry.yarnpkg.com/joi/-/joi-10.4.2.tgz#bc934aed34f8d0d0c84365c8e52fb6178ceb926a"
   dependencies:
     hoek "4.x.x"
     isemail "2.x.x"
@@ -2700,7 +2704,7 @@ repeat-string@^1.5.2:
   version "1.6.1"
   resolved "https://registry.yarnpkg.com/repeat-string/-/repeat-string-1.6.1.tgz#8dcae470e1c88abc2d600fff4a776286da75e637"
 
-request@2, request@^2.36.0, request@^2.74.0, request@^2.81.0, request@~2.81.0:
+request@2, request@^2.74.0, request@^2.81.0, request@~2.81.0:
   version "2.81.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.81.0.tgz#c6928946a0e06c5f8d6f8a9333469ffda46298a0"
   dependencies:
@@ -2752,7 +2756,7 @@ request@2.78.0:
     tough-cookie "~2.3.0"
     tunnel-agent "~0.4.1"
 
-request@~2.74.0:
+request@^2.36.0, request@~2.74.0:
   version "2.74.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.74.0.tgz#7693ca768bbb0ea5c8ce08c084a45efa05b892ab"
   dependencies:
@@ -2862,6 +2866,19 @@ rollup-plugin-svelte@^1.8.1:
   dependencies:
     rollup-pluginutils "^2.0.1"
     svelte "^1.11.2"
+
+rollup-plugin-svg@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-svg/-/rollup-plugin-svg-1.0.1.tgz#9de43943cefeacb9ddb09b3ea8ddb9de6552ede1"
+  dependencies:
+    rollup-pluginutils "^1.3.1"
+
+rollup-pluginutils@^1.3.1:
+  version "1.5.2"
+  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-1.5.2.tgz#1e156e778f94b7255bfa1b3d0178be8f5c552408"
+  dependencies:
+    estree-walker "^0.2.1"
+    minimatch "^3.0.2"
 
 rollup-pluginutils@^2.0.1:
   version "2.0.1"
@@ -3333,8 +3350,8 @@ ua-parser-js@0.7.12:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
 
 uglify-js@^2.6:
-  version "2.8.23"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.23.tgz#8230dd9783371232d62a7821e2cf9a817270a8a0"
+  version "2.8.24"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.24.tgz#48eb5175cf32e22ec11a47e638d7c8b4e0faf2dd"
   dependencies:
     source-map "~0.5.1"
     yargs "~3.10.0"
@@ -3364,6 +3381,12 @@ underscore.string@~2.2.0rc:
 underscore@1.7.x:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/underscore/-/underscore-1.7.0.tgz#6bbaf0877500d36be34ecaa584e0db9fef035209"
+
+unhandled-rejection@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/unhandled-rejection/-/unhandled-rejection-1.0.0.tgz#16c97cb0d620135176559696bcc9222e0da40445"
+  dependencies:
+    debug "^2.2.0"
 
 unique-filename@~1.1.0:
   version "1.1.0"
@@ -3469,8 +3492,8 @@ vlq@^0.2.1:
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.2.tgz#e316d5257b40b86bb43cb8d5fea5d7f54d6b0ca1"
 
 vudash-widget-ci@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-ci/-/vudash-widget-ci-7.0.0.tgz#44978b15b2947bfa8d29530906e01ad48d0467a9"
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/vudash-widget-ci/-/vudash-widget-ci-7.5.0.tgz#ec6a590b8200cae649f91d52ae46b477b7d3baa1"
   dependencies:
     bluebird "^3.4.6"
     circleci "^0.3.2"
@@ -3479,8 +3502,8 @@ vudash-widget-ci@^7.0.0:
     travis-ci "^2.1.1"
 
 vudash-widget-gauge@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-gauge/-/vudash-widget-gauge-7.0.0.tgz#8a6f43231b989e24cd570c8a330fdaa1b6bf9f4b"
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/vudash-widget-gauge/-/vudash-widget-gauge-7.4.1.tgz#f0ed29d86599ca808e0aee6325f34371a67ca465"
   dependencies:
     bluebird "^3.4.7"
     hoek "^4.1.0"
@@ -3496,16 +3519,16 @@ vudash-widget-progress@^6.0.0:
   resolved "https://registry.yarnpkg.com/vudash-widget-progress/-/vudash-widget-progress-6.0.2.tgz#b4893a30fed7e8be129e15fd7fe6ec54d9c701ca"
 
 vudash-widget-statistic@^7.0.0:
-  version "7.3.2"
-  resolved "https://registry.yarnpkg.com/vudash-widget-statistic/-/vudash-widget-statistic-7.3.2.tgz#444af0b4dd67f3dbe0b423cd91dfc5ae9962ba1e"
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/vudash-widget-statistic/-/vudash-widget-statistic-7.4.1.tgz#f6ee34e9e8bc3557f66411ba46aa0fbe567e7fe4"
   dependencies:
     chartist "^0.11.0"
     fit-text "^2.0.0"
     sprintf-js "^1.0.3"
 
 vudash-widget-status@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-status/-/vudash-widget-status-7.0.0.tgz#ceca975595cc03f795d1cf6267719e3cef1c680d"
+  version "7.4.1"
+  resolved "https://registry.yarnpkg.com/vudash-widget-status/-/vudash-widget-status-7.4.1.tgz#8c44cef34609aed101a1e2b014aa7864d2dbe7b7"
   dependencies:
     bluebird "^3.4.7"
     export-dir "^0.1.2"
@@ -3524,8 +3547,8 @@ vudash-widget-time@^7.0.0:
     moment-timezone "^0.5.13"
 
 vudash@^7.0.0:
-  version "7.3.0"
-  resolved "https://registry.yarnpkg.com/vudash/-/vudash-7.3.0.tgz#53adbd3c03db43e168c651b0bcaf6a0d4f3af501"
+  version "7.5.0"
+  resolved "https://registry.yarnpkg.com/vudash/-/vudash-7.5.0.tgz#3870828367ec3d457c7405f005491be17310ac27"
   dependencies:
     app-module-path "^1.1.0"
     bluebird "^3.4.0"
@@ -3549,8 +3572,10 @@ vudash@^7.0.0:
     rollup-plugin-node-resolve "^3.0.0"
     rollup-plugin-postcss "^0.4.3"
     rollup-plugin-svelte "^1.8.1"
+    rollup-plugin-svg "^1.0.1"
     socket.io "^1.7.3"
     svelte "^1.18.2"
+    unhandled-rejection "^1.0.0"
     vision "^4.1.0"
     vudash-widget-time "^7.0.0"
 
@@ -3579,10 +3604,10 @@ which@1, which@^1.2.8, which@~1.2.14:
     isexe "^2.0.0"
 
 wide-align@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.0.tgz#40edde802a71fea1f070da3e62dcda2e7add96ad"
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/wide-align/-/wide-align-1.1.2.tgz#571e0f1b0604636ebc0dfc21b0339bbe31341710"
   dependencies:
-    string-width "^1.0.1"
+    string-width "^1.0.2"
 
 widest-line@^1.0.0:
   version "1.0.0"
@@ -3629,8 +3654,8 @@ wreck@10.x.x:
     hoek "4.x.x"
 
 write-file-atomic@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-2.0.0.tgz#bb99a5440d0d31dd860a68da392bffeef66251a1"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/write-file-atomic/-/write-file-atomic-2.1.0.tgz#1769f4b551eedce419f0505deae2e26763542d37"
   dependencies:
     graceful-fs "^4.1.11"
     imurmurhash "^0.1.4"
