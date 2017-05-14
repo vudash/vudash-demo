@@ -12,10 +12,10 @@
   "dependencies": {
     "@vudash/datasource-random": "^6.0.0",
     "@vudash/datasource-rest": "^6.0.0",
-    "vudash": "^7.0.0",
-    "vudash-widget-ci": "^7.0.0",
+    "vudash": "^7.6.0",
+    "vudash-widget-ci": "^7.6.0",
     "vudash-widget-gauge": "^7.0.0",
-    "vudash-widget-health": "^6.0.0",
+    "vudash-widget-health": "^7.6.0",
     "vudash-widget-progress": "^7.5.0",
     "vudash-widget-statistic": "^7.0.0",
     "vudash-widget-status": "^7.0.0",

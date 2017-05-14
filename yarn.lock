@@ -1972,7 +1972,7 @@ moment-timezone@^0.5.13, moment-timezone@^0.5.x:
   dependencies:
     moment ">= 2.9.0"
 
-moment@2.x.x, "moment@>= 2.9.0", moment@^2.13.0:
+moment@2.x.x, "moment@>= 2.9.0", moment@^2.13.0, moment@^2.18.1:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
@@ -3465,9 +3465,9 @@ vlq@^0.2.1:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.2.tgz#e316d5257b40b86bb43cb8d5fea5d7f54d6b0ca1"
 
-vudash-widget-ci@^7.0.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-ci/-/vudash-widget-ci-7.5.0.tgz#ec6a590b8200cae649f91d52ae46b477b7d3baa1"
+vudash-widget-ci@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vudash-widget-ci/-/vudash-widget-ci-7.6.0.tgz#6d858df98d6cb30b1cf0bfbd9a9c0d7f824f9a14"
   dependencies:
     bluebird "^3.4.6"
     circleci "^0.3.2"
@@ -3482,15 +3482,15 @@ vudash-widget-gauge@^7.0.0:
     bluebird "^3.4.7"
     hoek "^4.1.0"
 
-vudash-widget-health@^6.0.0:
-  version "6.0.2"
-  resolved "https://registry.yarnpkg.com/vudash-widget-health/-/vudash-widget-health-6.0.2.tgz#5f6ce2a0356063f4dd968c327cc9f917510e7512"
+vudash-widget-health@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vudash-widget-health/-/vudash-widget-health-7.6.0.tgz#6b8040b03e4b99f3ddeb1002dfe0ac6687b86988"
   dependencies:
     bluebird "^3.4.7"
 
 vudash-widget-progress@^7.5.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/vudash-widget-progress/-/vudash-widget-progress-7.5.0.tgz#8e0d44fab8c3842b4e54611dd0b2394a0f8e453e"
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vudash-widget-progress/-/vudash-widget-progress-7.6.0.tgz#ece119e767484c70e763b1e95a9a3655843a012c"
 
 vudash-widget-statistic@^7.0.0:
   version "7.4.1"
@@ -3501,13 +3501,14 @@ vudash-widget-statistic@^7.0.0:
     sprintf-js "^1.0.3"
 
 vudash-widget-status@^7.0.0:
-  version "7.4.1"
-  resolved "https://registry.yarnpkg.com/vudash-widget-status/-/vudash-widget-status-7.4.1.tgz#8c44cef34609aed101a1e2b014aa7864d2dbe7b7"
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vudash-widget-status/-/vudash-widget-status-7.6.0.tgz#16049756be7f555baaf3e9850bb248508743060b"
   dependencies:
     bluebird "^3.4.7"
     export-dir "^0.1.2"
     got "^6.7.1"
     hoek "^4.1.0"
+    moment "^2.18.1"
 
 vudash-widget-time@^7.0.0:
   version "7.0.0"
@@ -3520,9 +3521,9 @@ vudash-widget-time@^7.0.0:
     moment "^2.13.0"
     moment-timezone "^0.5.13"
 
-vudash@^7.0.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/vudash/-/vudash-7.5.0.tgz#3870828367ec3d457c7405f005491be17310ac27"
+vudash@^7.6.0:
+  version "7.6.0"
+  resolved "https://registry.yarnpkg.com/vudash/-/vudash-7.6.0.tgz#77468cd273df1789975440583881cf422f3074e5"
   dependencies:
     app-module-path "^1.1.0"
     bluebird "^3.4.0"
