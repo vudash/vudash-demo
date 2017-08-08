@@ -1,0 +1,277 @@
+{
+  "name": "Cryptocoin Dashboard",
+  "layout": {
+    "columns": 6,
+    "rows": 4
+  },
+  "plugins": {
+    "ds-cryptocompare": { 
+      "module": "plugins/cryptocompare-plugin"
+    },
+    "ds-cryptocompare-current": { 
+      "module": "plugins/cryptocompare-current-plugin"
+    }
+  },
+  "widgets": [
+    {
+      "position": {
+        "x": 3,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "SJCX"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Storjcoin X",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "SC"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Siacoin",
+        "format": "£%.4f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "ANS"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / AntShares",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 3,
+        "h": 4
+      },
+      "datasource": {
+        "name": "ds-cryptocompare",
+        "options": {
+          "symbols": ["BTC", "ETH"]
+        }
+      },
+      "options": {
+        "schedule": 86400000,
+        "description": "Bitcoin Price (GBP) / days ago",
+        "labels": [7,6,5,4,3,2,1]
+      },
+      "widget": "@vudash/widget-chart"
+    },
+    {
+      "position": {
+        "x": 3,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "GNT"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Golem",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "STRAT"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Stratis",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "DGB"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Digibyte",
+        "format": "£%.4f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 2,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "ETH"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Ethereum",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 2,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "BTC"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Bitcoin",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 3,
+        "y": 2,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "XRP"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Ripple",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 3,
+        "y": 3,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "LTC"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Litecoin",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 3,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "XLM"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / Stellar Lumens",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 3,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
+          "symbol": "OMG"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Current / OmiseGO",
+        "format": "£%.4f"
+      },
+      "widget": "vudash-widget-statistic"
+    }
+  ]
+}

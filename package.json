@@ -10,15 +10,15 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@vudash/datasource-random": "^6.0.0",
-    "@vudash/datasource-rest": "^6.0.0",
-    "vudash": "^7.6.0",
-    "vudash-widget-ci": "^7.6.0",
-    "vudash-widget-gauge": "^7.0.0",
-    "vudash-widget-health": "^7.6.0",
-    "vudash-widget-progress": "^7.5.0",
-    "vudash-widget-statistic": "^7.0.0",
-    "vudash-widget-status": "^7.0.0",
-    "vudash-widget-time": "^7.0.0"
+    "@vudash/datasource-random": "*",
+    "@vudash/datasource-rest": "*",
+    "vudash": "*",
+    "vudash-widget-ci": "*",
+    "vudash-widget-gauge": "^*",
+    "vudash-widget-health": "*",
+    "vudash-widget-progress": "*",
+    "vudash-widget-statistic": "*",
+    "vudash-widget-status": "*",
+    "vudash-widget-time": "*"
   }
 }
