@@ -12,6 +12,7 @@
   "dependencies": {
     "@vudash/datasource-random": "*",
     "@vudash/datasource-rest": "*",
+    "@vudash/widget-chart": "^7.7.0",
     "vudash": "*",
     "vudash-widget-ci": "*",
     "vudash-widget-gauge": "^*",
