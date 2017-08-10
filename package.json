@@ -10,16 +10,16 @@
   "engines": {
     "node": ">=8.x"
   },
-  "author": "",
+  "author": "Antony Jones",
   "license": "MIT",
   "dependencies": {
     "@vudash/datasource-random": "*",
-    "@vudash/datasource-rest": "^7.11.0",
-    "@vudash/widget-chart": "^7.7.0",
-    "vudash": "^7.11.0",
+    "@vudash/datasource-rest": "*",
+    "@vudash/widget-chart": "*",
+    "vudash": "*",
     "vudash-widget-ci": "*",
-    "vudash-widget-gauge": "^*",
-    "vudash-widget-health": "^7.11.0",
+    "vudash-widget-gauge": "*",
+    "vudash-widget-health": "*",
     "vudash-widget-progress": "*",
     "vudash-widget-statistic": "*",
     "vudash-widget-status": "*",
