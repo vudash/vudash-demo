@@ -28,7 +28,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Storjcoin X",
+        "description": "Storjcoin X",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -48,7 +48,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Siacoin",
+        "description": "Siacoin",
         "format": "£%.4f"
       },
       "widget": "vudash-widget-statistic"
@@ -63,12 +63,12 @@
       "datasource": {
         "name": "ds-cryptocompare-current",
         "options": {
-          "symbol": "ANS"
+          "symbol": "NEO"
         }
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / AntShares",
+        "description": "NEO",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -108,48 +108,8 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Golem",
+        "description": "Golem",
         "format": "£%.2f"
-      },
-      "widget": "vudash-widget-statistic"
-    },
-    {
-      "position": {
-        "x": 4,
-        "y": 1,
-        "w": 1,
-        "h": 1
-      },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "STRAT"
-        }
-      },
-      "options": {
-        "schedule": 30000,
-        "description": "Current / Stratis",
-        "format": "£%.2f"
-      },
-      "widget": "vudash-widget-statistic"
-    },
-    {
-      "position": {
-        "x": 5,
-        "y": 1,
-        "w": 1,
-        "h": 1
-      },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "DGB"
-        }
-      },
-      "options": {
-        "schedule": 30000,
-        "description": "Current / Digibyte",
-        "format": "£%.4f"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -163,12 +123,41 @@
       "datasource": {
         "name": "ds-cryptocompare-current",
         "options": {
+          "symbol": "STRAT"
+        }
+      },
+      "options": {
+        "schedule": 30000,
+        "description": "Stratis",
+        "format": "£%.2f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 4,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "widget": "vudash-widget-health"
+    },
+    {
+      "position": {
+        "x": 5,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": {
+        "name": "ds-cryptocompare-current",
+        "options": {
           "symbol": "ETH"
         }
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Ethereum",
+        "description": "Ethereum",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -188,7 +177,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Bitcoin",
+        "description": "Bitcoin",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -208,7 +197,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Ripple",
+        "description": "Ripple",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -228,7 +217,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Litecoin",
+        "description": "Litecoin",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -248,7 +237,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / Stellar Lumens",
+        "description": "Stellar Lumens",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -268,7 +257,7 @@
       },
       "options": {
         "schedule": 30000,
-        "description": "Current / OmiseGO",
+        "description": "OmiseGO",
         "format": "£%.4f"
       },
       "widget": "vudash-widget-statistic"
