@@ -4,12 +4,90 @@
     "columns": 6,
     "rows": 4
   },
-  "plugins": {
+  "datasources": {
     "ds-cryptocompare": { 
-      "module": "plugins/cryptocompare-plugin"
+      "module": "plugins/cryptocompare-plugin",
+      "schedule": 86400000,
+      "options": {
+        "symbols": ["BTC", "ETH"]
+      }
     },
-    "ds-cryptocompare-current": { 
-      "module": "plugins/cryptocompare-current-plugin"
+    "ds-cryptocompare-current-mtl": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "MTL"
+      }
+    },
+    "ds-cryptocompare-current-sc": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "SC"
+      }
+    },
+    "ds-cryptocompare-current-neo": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "NEO"
+      }
+    },
+    "ds-cryptocompare-current-gnt": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "GNT"
+      }
+    },
+    "ds-cryptocompare-current-strat": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "STRAT"
+      }
+    },
+    "ds-cryptocompare-current-eth": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "ETH"
+      }
+    },
+    "ds-cryptocompare-current-btc": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "BTC"
+      }
+    },
+    "ds-cryptocompare-current-xrp": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "XRP"
+      }
+    },
+    "ds-cryptocompare-current-xlm": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "XLM"
+      }
+    },
+    "ds-cryptocompare-current-omg": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "OMG"
+      }
+    },
+    "ds-cryptocompare-current-ltc": { 
+      "module": "plugins/cryptocompare-current-plugin",
+      "schedule": 30000,
+      "options": {
+        "symbol": "LTC"
+      }
     }
   },
   "widgets": [
@@ -20,15 +98,9 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "SJCX"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-mtl",
       "options": {
-        "schedule": 30000,
-        "description": "Storjcoin X",
+        "description": "Metal",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -40,12 +112,7 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "SC"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-sc",
       "options": {
         "schedule": 30000,
         "description": "Siacoin",
@@ -60,12 +127,7 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "NEO"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-neo",
       "options": {
         "schedule": 30000,
         "description": "NEO",
@@ -80,14 +142,8 @@
         "w": 3,
         "h": 4
       },
-      "datasource": {
-        "name": "ds-cryptocompare",
-        "options": {
-          "symbols": ["BTC", "ETH"]
-        }
-      },
+      "datasource": "ds-cryptocompare",
       "options": {
-        "schedule": 86400000,
         "description": "Bitcoin Price (GBP) / days ago",
         "labels": [7,6,5,4,3,2,1]
       },
@@ -100,14 +156,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "GNT"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-gnt",
       "options": {
-        "schedule": 30000,
         "description": "Golem",
         "format": "£%.2f"
       },
@@ -120,14 +170,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "STRAT"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-strat",
       "options": {
-        "schedule": 30000,
         "description": "Stratis",
         "format": "£%.2f"
       },
@@ -149,14 +193,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "ETH"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-eth",
       "options": {
-        "schedule": 30000,
         "description": "Ethereum",
         "format": "£%.2f"
       },
@@ -169,14 +207,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "BTC"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-btc",
       "options": {
-        "schedule": 30000,
         "description": "Bitcoin",
         "format": "£%.2f"
       },
@@ -189,14 +221,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "XRP"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-xrp",
       "options": {
-        "schedule": 30000,
         "description": "Ripple",
         "format": "£%.2f"
       },
@@ -209,14 +235,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "LTC"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-ltc",
       "options": {
-        "schedule": 30000,
         "description": "Litecoin",
         "format": "£%.2f"
       },
@@ -229,14 +249,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "XLM"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-xlm",
       "options": {
-        "schedule": 30000,
         "description": "Stellar Lumens",
         "format": "£%.2f"
       },
@@ -249,14 +263,8 @@
         "w": 1,
         "h": 1
       },
-      "datasource": {
-        "name": "ds-cryptocompare-current",
-        "options": {
-          "symbol": "OMG"
-        }
-      },
+      "datasource": "ds-cryptocompare-current-omg",
       "options": {
-        "schedule": 30000,
         "description": "OmiseGO",
         "format": "£%.4f"
       },

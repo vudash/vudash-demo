@@ -48,6 +48,6 @@ class CryptocompareDatasource {
   }
 }
 
-exports.register = function (engine) {
-  engine.contributeDatasource(CryptocompareDatasource)
+exports.register = function (options) {
+  return new CryptocompareDatasource(options)
 }

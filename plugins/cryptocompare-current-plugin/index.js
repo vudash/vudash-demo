@@ -21,19 +21,19 @@ class CryptocompareCurrentDatasource {
 
   fetch () {
     return this.getData()
-      .then(({ body }) => {
-        const price = reach(body, `RAW.${this.symbol}.GBP.PRICE`)
+    .then(({ body }) => {
+      const price = reach(body, `RAW.${this.symbol}.GBP.PRICE`)
 
-        if (this.history.length > 50) {
-          this.history.shift()
-        }
-        this.history.push(price)
+      if (this.history.length > 50) {
+        this.history.shift()
+      }
+      this.history.push(price)
 
-        return this.history
-      })
+      return this.history
+    })
   }
 }
 
-exports.register = function (engine) {
-  engine.contributeDatasource(CryptocompareCurrentDatasource)
+exports.register = function (options) {
+  return new CryptocompareCurrentDatasource(options)
 }
