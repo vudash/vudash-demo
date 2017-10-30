@@ -1,22 +1,35 @@
 {
-  "name": "Happy",
+  "name": "Demo",
   "layout": {
     "columns": 5,
     "rows": 3
   },
-  "plugins": {
-    "ds-rest-xe": {
+  "datasources": {
+    "ds-rest-xe-gbp": {
       "module": "@vudash/datasource-rest",
+      "schedule": 900000,
       "options": {
         "method": "get",
-        "url": "http://api.fixer.io/latest?base=EUR"
+        "url": "http://api.fixer.io/latest?base=EUR",
+        "graph": "rates.GBP"
+      }
+    },
+    "ds-rest-xe-usd": {
+      "module": "@vudash/datasource-rest",
+      "schedule": 900000,
+      "options": {
+        "method": "get",
+        "url": "http://api.fixer.io/latest?base=EUR",
+        "graph": "rates.USD"
       }
     },
     "ds-random": {
-      "module": "@vudash/datasource-random"
+      "module": "@vudash/datasource-random",
+      "schedule": 1000
     },
     "ds-random-progress": {
       "module": "@vudash/datasource-random",
+      "schedule": 1000,
       "options": {
         "method": "natural",
         "options": {
@@ -45,8 +58,12 @@
           ]
         }
     },
-    { "position": {"x": 4, "y": 0, "w": 1, "h": 1}, "widget": "vudash-widget-health" },
-    { "position": {"x": 0, "y": 1, "w": 1, "h": 1},
+    { 
+      "position": {"x": 4, "y": 0, "w": 1, "h": 1},
+      "widget": "vudash-widget-health"
+    },
+    {
+      "position": {"x": 0, "y": 1, "w": 1, "h": 1},
       "widget": "vudash-widget-ci",
       "options": {
         "provider": "travis",
@@ -54,7 +71,8 @@
         "user": "vudash"
       }
     },
-    { "position": {"x": 1, "y": 1, "w": 1, "h": 1},
+    {
+      "position": {"x": 1, "y": 1, "w": 1, "h": 1},
       "widget": "vudash-widget-ci",
       "options": {
         "provider": "travis",
@@ -62,74 +80,62 @@
         "user": "vudash"
       }
     },
-    { "position": {"x": 2, "y": 1, "w": 1, "h": 1},
+    {
+      "position": {"x": 2, "y": 1, "w": 1, "h": 1},
       "widget": "vudash-widget-statistic",
-      "datasource": {
-        "name": "ds-random"
-      },
+      "datasource": "ds-random",
       "options": {
-        "schedule": 1000,
         "description": "Visitor Count"
       }
     },
     { 
       "position": {"x": 3, "y": 1, "w": 1, "h": 1},
-      "datasource": {
-        "name": "ds-random-progress"
-      },
+      "datasource": "ds-random-progress",
       "widget": "vudash-widget-progress",
       "options": {
-        "schedule": 1000
+        "description": "Completion"
       }
     },
-    { "position": {"x": 4, "y": 1, "w": 1, "h": 1}, 
+    { 
+      "position": {"x": 4, "y": 1, "w": 1, "h": 1}, 
       "widget": "vudash-widget-status",
       "options": {
         "type": "statuspageio",
-        "url": "http://status.contentful.com/",
-        "components": [
-          "Content Delivery API",
-          "Assets CDN",
-          "Content Management API",
-          "Web App",
-          "Website",
-          "Authentication Service"
-        ]
+        "config": {
+          "url": "http://status.contentful.com/",
+          "components": [
+            "Content Delivery API",
+            "Assets CDN",
+            "Content Management API",
+            "Web App",
+            "Website",
+            "Authentication Service"
+          ]
+        }
       } 
     },
-
-    { "position": {"x": 0, "y": 2, "w": 2, "h": 1},
+    { 
+      "position": {"x": 0, "y": 2, "w": 2, "h": 1},
       "widget": "vudash-widget-statistic",
-      "datasource": {
-        "name": "ds-rest-xe",
-        "options": {
-          "url": "http://api.fixer.io/latest?base=EUR",
-          "graph": "rates.GBP"
-        }
-      },
+      "datasource": "ds-rest-xe-gbp",
       "options": {
-        "schedule": 900000,
         "description": "EUR -> GBP",
         "format": "€%.2f"
       }
     },
-    { "position": {"x": 2, "y": 2, "w": 1, "h": 1},
-      "datasource": {
-        "name": "ds-random"
-      },
+    { 
+      "position": {"x": 2, "y": 2, "w": 1, "h": 1},
+      "datasource": "ds-random",
       "widget": "vudash-widget-gauge",
-      "description": "Power Level"
-    },
-    { "position": {"x": 3, "y": 2, "w": 2, "h": 1},
-      "widget": "vudash-widget-statistic",
-      "datasource": {
-        "name": "ds-rest-xe",
-        "options": {
-          "graph": "rates.USD"
-        }
-      },
       "options": {
-        "schedule": 900000,
+        "description": "Power Level"
+      }
+    },
+    {
+      "position": {"x": 3, "y": 2, "w": 2, "h": 1},
+      "widget": "vudash-widget-statistic",
+      "datasource": "ds-rest-xe-usd",
+      "options": {
         "description": "EUR -> USD",
         "format": "€%.2f"
       }
