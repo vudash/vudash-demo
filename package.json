@@ -14,16 +14,16 @@
   "author": "Antony Jones",
   "license": "MIT",
   "dependencies": {
-    "@vudash/datasource-random": "*",
-    "@vudash/datasource-rest": "*",
-    "@vudash/widget-chart": "*",
-    "vudash": "*",
-    "vudash-widget-ci": "*",
-    "vudash-widget-gauge": "*",
-    "vudash-widget-health": "*",
-    "vudash-widget-progress": "*",
-    "vudash-widget-statistic": "*",
-    "vudash-widget-status": "*",
-    "vudash-widget-time": "*"
+    "@vudash/datasource-random": ">=8.0.0",
+    "@vudash/datasource-rest": ">=8.0.0",
+    "@vudash/widget-chart": ">=8.0.0",
+    "vudash": ">=8.0.0",
+    "vudash-widget-ci": ">=8.0.0",
+    "vudash-widget-gauge": ">=8.0.0",
+    "vudash-widget-health": ">=8.0.0",
+    "vudash-widget-progress": ">=8.0.0",
+    "vudash-widget-statistic": ">=8.0.0",
+    "vudash-widget-status": ">=8.0.0",
+    "vudash-widget-time": ">=8.0.0"
   }
 }
