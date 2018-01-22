@@ -1,4 +1,4 @@
-#!env node
+'use strict'
 
 const { dependencies } = require('../package.json')
 const { spawn } = require('child_process')

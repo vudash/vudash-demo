@@ -9,84 +9,95 @@
       "module": "plugins/cryptocompare-plugin",
       "schedule": 86400000,
       "options": {
-        "symbols": ["BTC", "ETH"]
+        "symbols": ["BTC", "ETH", "BCH", "DASH", "ZEC"]
       }
     },
-    "ds-cryptocompare-current-mtl": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-mtl": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "MTL"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=MTL&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-sc": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-sc": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "SC"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=SC&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-neo": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-neo": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "NEO"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=NEO&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-gnt": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-trx": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "GNT"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=TRX&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-strat": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-strat": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "STRAT"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=STRAT&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-eth": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-eth": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "ETH"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-btc": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-btc": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "BTC"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-xrp": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-xrp": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "XRP"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=XRP&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-xlm": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-xlm": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "XLM"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=XLM&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-omg": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-omg": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "OMG"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=OMG&tsyms=GBP"
       }
     },
-    "ds-cryptocompare-current-ltc": { 
-      "module": "plugins/cryptocompare-current-plugin",
+    "ds-cryptocompare-ltc": { 
+      "module": "@vudash/datasource-rest",
       "schedule": 30000,
       "options": {
-        "symbol": "LTC"
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=LTC&tsyms=GBP"
       }
     }
   },
@@ -98,7 +109,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-mtl",
+      "datasource": "ds-cryptocompare-mtl",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.MTL.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Metal",
         "format": "£%.2f"
@@ -112,9 +131,16 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-sc",
+      "datasource": "ds-cryptocompare-sc",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.SC.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
-        "schedule": 30000,
         "description": "Siacoin",
         "format": "£%.4f"
       },
@@ -127,9 +153,16 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-neo",
+      "datasource": "ds-cryptocompare-neo",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.NEO.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
-        "schedule": 30000,
         "description": "NEO",
         "format": "£%.2f"
       },
@@ -156,9 +189,17 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-gnt",
+      "datasource": "ds-cryptocompare-trx",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.TRX.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
-        "description": "Golem",
+        "description": "Tron",
         "format": "£%.2f"
       },
       "widget": "vudash-widget-statistic"
@@ -170,7 +211,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-strat",
+      "datasource": "ds-cryptocompare-strat",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.STRAT.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Stratis",
         "format": "£%.2f"
@@ -193,7 +242,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-eth",
+      "datasource": "ds-cryptocompare-eth",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.ETH.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Ethereum",
         "format": "£%.2f"
@@ -207,7 +264,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-btc",
+      "datasource": "ds-cryptocompare-btc",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.BTC.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Bitcoin",
         "format": "£%.2f"
@@ -221,7 +286,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-xrp",
+      "datasource": "ds-cryptocompare-xrp",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.XRP.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Ripple",
         "format": "£%.2f"
@@ -235,7 +308,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-ltc",
+      "datasource": "ds-cryptocompare-ltc",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.LTC.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Litecoin",
         "format": "£%.2f"
@@ -249,7 +330,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-xlm",
+      "datasource": "ds-cryptocompare-xlm",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.XLM.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "Stellar Lumens",
         "format": "£%.2f"
@@ -263,7 +352,15 @@
         "w": 1,
         "h": 1
       },
-      "datasource": "ds-cryptocompare-current-omg",
+      "datasource": "ds-cryptocompare-omg",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.OMG.GBP.PRICE"
+          }
+        }
+      ],
       "options": {
         "description": "OmiseGO",
         "format": "£%.4f"

@@ -1,0 +1,71 @@
+{
+  "name": "Crypto Dashboard for Raspberry Pi",
+  "layout": {
+    "columns": 1,
+    "rows": 2
+  },
+  "datasources": {
+    "ds-cryptocompare-eth": { 
+      "module": "@vudash/datasource-rest",
+      "schedule": 30000,
+      "options": {
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=ETH&tsyms=GBP"
+      }
+    },
+    "ds-cryptocompare-btc": { 
+      "module": "@vudash/datasource-rest",
+      "schedule": 30000,
+      "options": {
+        "method": "get",
+        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC&tsyms=GBP"
+      }
+    }
+  },
+  "widgets": [
+    {
+      "position": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": "ds-cryptocompare-eth",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.ETH.GBP.PRICE"
+          }
+        }
+      ],
+      "options": {
+        "description": "Ethereum",
+        "format": "£%.0f"
+      },
+      "widget": "vudash-widget-statistic"
+    },
+    {
+      "position": {
+        "x": 0,
+        "y": 1,
+        "w": 1,
+        "h": 1
+      },
+      "datasource": "ds-cryptocompare-btc",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "RAW.BTC.GBP.PRICE"
+          }
+        }
+      ],
+      "options": {
+        "description": "Bitcoin",
+        "format": "£%.0f"
+      },
+      "widget": "vudash-widget-statistic"
+    }
+  ]
+}

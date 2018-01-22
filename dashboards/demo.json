@@ -10,8 +10,7 @@
       "schedule": 900000,
       "options": {
         "method": "get",
-        "url": "http://api.fixer.io/latest?base=EUR",
-        "graph": "rates.GBP"
+        "url": "http://api.fixer.io/latest?base=EUR"
       }
     },
     "ds-rest-xe-usd": {
@@ -19,8 +18,7 @@
       "schedule": 900000,
       "options": {
         "method": "get",
-        "url": "http://api.fixer.io/latest?base=EUR",
-        "graph": "rates.USD"
+        "url": "http://api.fixer.io/latest?base=EUR"
       }
     },
     "ds-random": {
@@ -118,6 +116,14 @@
       "position": {"x": 0, "y": 2, "w": 2, "h": 1},
       "widget": "vudash-widget-statistic",
       "datasource": "ds-rest-xe-gbp",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "rates.GBP"
+          }
+        }
+      ],
       "options": {
         "description": "EUR -> GBP",
         "format": "€%.2f"
@@ -135,6 +141,14 @@
       "position": {"x": 3, "y": 2, "w": 2, "h": 1},
       "widget": "vudash-widget-statistic",
       "datasource": "ds-rest-xe-usd",
+      "transformations": [
+        {
+          "transformer": "@vudash/transformer-map",
+          "options": {
+            "value": "rates.USD"
+          }
+        }
+      ],
       "options": {
         "description": "EUR -> USD",
         "format": "€%.2f"

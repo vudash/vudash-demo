@@ -6,7 +6,7 @@
   "scripts": {
     "start": "DEFAULT_DASHBOARD=demo vudash",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "link": "./scripts/link.js"
+    "link": "node ./scripts/link.js"
   },
   "engines": {
     "node": ">=8.x"
