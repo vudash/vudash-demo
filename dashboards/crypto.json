@@ -49,7 +49,7 @@
       "schedule": 30000,
       "options": {
         "method": "get",
-        "url": "https://min-api.cryptocompare.com/data/pricemultifull?fsyms=STRAT&tsyms=GBP"
+        "url": "https://xmin-api.cryptocompare.com/data/pricemultifull?fsyms=STRAT&tsyms=GBP"
       }
     },
     "ds-cryptocompare-eth": { 
