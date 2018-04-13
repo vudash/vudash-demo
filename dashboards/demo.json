@@ -23,7 +23,14 @@
     },
     "ds-random": {
       "module": "@vudash/datasource-random",
-      "schedule": 1000
+      "schedule": 1000,
+      "options": {
+        "method": "natural",
+        "options": {
+          "min": 0,
+          "max": 3983
+        }
+      }
     },
     "ds-random-progress": {
       "module": "@vudash/datasource-random",
@@ -134,7 +141,8 @@
       "datasource": "ds-random",
       "widget": "vudash-widget-gauge",
       "options": {
-        "description": "Power Level"
+        "description": "Power Level",
+        "maximum": 3983
       }
     },
     {
