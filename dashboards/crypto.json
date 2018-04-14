@@ -120,7 +120,8 @@
       ],
       "options": {
         "description": "Metal",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -142,7 +143,8 @@
       ],
       "options": {
         "description": "Siacoin",
-        "format": "£%.4f"
+        "format": "£%.4f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -164,7 +166,8 @@
       ],
       "options": {
         "description": "NEO",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -178,7 +181,8 @@
       "datasource": "ds-cryptocompare",
       "options": {
         "description": "Bitcoin Price (GBP) / days ago",
-        "labels": [7,6,5,4,3,2,1]
+        "labels": [7,6,5,4,3,2,1],
+        "historyView": "ticker"
       },
       "widget": "@vudash/widget-chart"
     },
@@ -200,7 +204,8 @@
       ],
       "options": {
         "description": "Tron",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -222,7 +227,8 @@
       ],
       "options": {
         "description": "Stratis",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -253,7 +259,8 @@
       ],
       "options": {
         "description": "Ethereum",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -275,7 +282,8 @@
       ],
       "options": {
         "description": "Bitcoin",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -297,7 +305,8 @@
       ],
       "options": {
         "description": "Ripple",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -319,7 +328,8 @@
       ],
       "options": {
         "description": "Litecoin",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -341,7 +351,8 @@
       ],
       "options": {
         "description": "Stellar Lumens",
-        "format": "£%.2f"
+        "format": "£%.2f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     },
@@ -363,7 +374,8 @@
       ],
       "options": {
         "description": "OmiseGO",
-        "format": "£%.4f"
+        "format": "£%.4f",
+        "historyView": "ticker"
       },
       "widget": "vudash-widget-statistic"
     }
