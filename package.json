@@ -18,7 +18,7 @@
     "@vudash/datasource-rest": "^9.5.0",
     "@vudash/transformer-map": ">=9.0.1",
     "@vudash/widget-chart": ">=9.0.0",
-    "vudash": "^9.7.1",
+    "vudash": "^9.7.3",
     "vudash-widget-ci": "^9.4.0",
     "vudash-widget-gauge": "^9.7.0",
     "vudash-widget-health": "^9.3.4",
